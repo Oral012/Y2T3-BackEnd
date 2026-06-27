@@ -1,0 +1,22 @@
+{
+  "name": "week6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Install_back": "npm install --prefix back",
+    "Install_front": "npm install --prefix front",
+    "install": "npm run Install_back && npm run Install_front",
+    "dev_back": "npm run dev --prefix back",
+    "dev_front": "npm run dev --prefix front",
+    "dev": "concurrently \"npm run dev_back\" \"npm run dev_front\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
